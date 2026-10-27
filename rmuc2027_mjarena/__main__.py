@@ -10,7 +10,7 @@ from .scene import Attachment, Simulation, load_scene
 
 
 ARENAS = {
-  "rmuc2027": Path(__file__).parent / "rmuc2027_battlefield_mjcf" / "model.xml",
+  "rmuc2027": Path(__file__).parent / "arena_mjcf" / "model.xml",
 }
 
 

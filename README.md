@@ -1,4 +1,4 @@
-# Arena Sim
+# RMUC2027 MJ Arena
 
 将 MuJoCo 场地、外部模型和浏览器显示组合起来的 Python 库。场景和输入不绑定机器人、策略、训练框架或传感器：使用者自己提供 MJCF、控制器和控制映射。软件包包含 RMUC2027 场地，不包含本项目的机器人模型或 policy。
 
@@ -25,9 +25,9 @@ arena-sim --arena rmuc2027 --headless --steps 1000
 
 ```python
 from pathlib import Path
-from arena_sim import Attachment, Simulation, load_scene
-from arena_sim.input import WebServer
-from arena_sim.viewer import BrowserViewer
+from rmuc2027_mjarena import Attachment, Simulation, load_scene
+from rmuc2027_mjarena.input import WebServer
+from rmuc2027_mjarena.viewer import BrowserViewer
 
 arena = Path("/path/to/arena/model.xml")
 model = load_scene(arena, [Attachment(Path("/path/to/robot.xml"), "robot/", (0, 0, 1))])
@@ -67,7 +67,7 @@ with BrowserViewer(model, port=0, fpv_camera="robot/fpv") as viewer:
 
 ```python
 import mujoco
-from arena_sim import Attachment, FPVCamera, Simulation, load_scene
+from rmuc2027_mjarena import Attachment, FPVCamera, Simulation, load_scene
 
 model = load_scene("/path/to/arena.xml", [
   Attachment("/path/to/robot.xml", prefix="robot/", position=(0, 0, 1)),
@@ -82,4 +82,4 @@ with FPVCamera(model, "robot/fpv", width=640, height=480) as camera:
 
 也可以用非负相机 ID 代替名称；相机必须存在于编译后的模型中。分辨率不能超过模型的离屏缓冲区尺寸（由 MJCF 的 `visual/global` 设置）；大型场景可按需增大 `max_geom` 参数。渲染器需要可用的 OpenGL 环境，无显示器运行时需在启动 Python 前根据环境配置 MuJoCo 的离屏渲染后端，例如 `MUJOCO_GL=egl`。相机的创建、渲染和关闭应在同一线程执行；读取 `sim.data` 时须与仿真写入同步。调用方自行决定采样频率及图像传输方式，此图像接口与浏览器视角独立。
 
-场地的几何结构、验证和限制见 [场地说明](rmuc2027_battlefield_mjcf/README.md)。场地验证记录属于模型的采样结果，并不代表任意机器人、控制器或硬件通过验收。
+场地的几何结构、验证和限制见 [场地说明](rmuc2027_mjarena/arena_mjcf/README.md)。场地验证记录属于模型的采样结果，并不代表任意机器人、控制器或硬件通过验收。
