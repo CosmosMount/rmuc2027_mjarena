@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mujoco model="rmuc2027_scene">
+  <compiler angle="radian" autolimits="true" fusestatic="true"/>
+  <option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast"/>
+  <statistic center="0 1.624 -0.042" extent="20"/>
+  <visual>
+    <global offwidth="1400" offheight="900"/>
+  </visual>
+  <default>
+    <default class="visual">
+      <geom contype="0" conaffinity="0" group="2" rgba="0.65 0.68 0.72 1"/>
+    </default>
+    <default class="collision">
+      <geom contype="1" conaffinity="1" group="3" rgba="0 0.8 0.2 0" friction="0.8 0.01 0.001" solref="0.01 1" solimp="0.95 0.99 0.001"/>
+    </default>
+  </default>
+  <include file="visual_assets.xml"/>
+  <include file="collision_assets.xml"/>
+  <include file="closure_assets.xml"/>
+  <include file="surface_repair_assets.xml"/>
+  <worldbody>
+    <light name="rmuc2027_key" pos="0 0 12" dir="0 0 -1" directional="true" diffuse=".6 .6 .6" specular=".15 .15 .15" castshadow="true"/>
+    <include file="visual_geoms.xml"/>
+    <include file="collision_geoms.xml"/>
+    <include file="closure_geoms.xml"/>
+    <include file="surface_repair_geoms.xml"/>
+    <body name="rmuc2027_dock_positive_xy" pos="1.03237595 1.03237595 1.6" quat="0.9238795325112867 0 0 0.3826834323650898">
+      <geom name="rmuc2027_dock_positive_xy_visual" type="mesh" mesh="rmuc2027_dock_mesh" contype="0" conaffinity="0" group="2" rgba="0.3 0.36 0.42 1" />
+      <geom name="rmuc2027_dock_positive_xy_collision_bottom" type="box" pos="0 0 0.08" size="0.15 0.15 0.08" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_positive_xy_collision_west" type="box" pos="-0.1475 0 0.18" size="0.0025 0.15 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_positive_xy_collision_east" type="box" pos="0.1475 0 0.18" size="0.0025 0.15 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_positive_xy_collision_south" type="box" pos="0 -0.1475 0.18" size="0.145 0.0025 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_positive_xy_collision_north" type="box" pos="0 0.1475 0.18" size="0.145 0.0025 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_positive_xy_collision_divider_x" type="box" pos="0 0 0.18" size="0.0025 0.145 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_positive_xy_collision_divider_y_w" type="box" pos="-0.07375 0 0.18" size="0.07125 0.0025 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_positive_xy_collision_divider_y_e" type="box" pos="0.07375 0 0.18" size="0.07125 0.0025 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <site name="rmuc2027_dock_positive_xy_dock_frame" size=".002" rgba="0 0 0 0" />
+      <site name="rmuc2027_dock_positive_xy_slot_1" pos="-0.07375 -0.07375 0.16" type="box" size=".055 .055 .0005" rgba="0 0 0 0" />
+      <site name="rmuc2027_dock_positive_xy_slot_2" pos="-0.07375 0.07375 0.16" type="box" size=".055 .055 .0005" rgba="0 0 0 0" />
+      <site name="rmuc2027_dock_positive_xy_slot_3" pos="0.07375 -0.07375 0.16" type="box" size=".055 .055 .0005" rgba="0 0 0 0" />
+      <site name="rmuc2027_dock_positive_xy_slot_4" pos="0.07375 0.07375 0.16" type="box" size=".055 .055 .0005" rgba="0 0 0 0" />
+    </body>
+
+    <body name="rmuc2027_dock_negative_xy" pos="-1.03237595 -1.03237595 1.6" quat="0.9238795325112867 0 0 0.3826834323650898">
+      <geom name="rmuc2027_dock_negative_xy_visual" type="mesh" mesh="rmuc2027_dock_mesh" contype="0" conaffinity="0" group="2" rgba="0.3 0.36 0.42 1" />
+      <geom name="rmuc2027_dock_negative_xy_collision_bottom" type="box" pos="0 0 0.08" size="0.15 0.15 0.08" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_negative_xy_collision_west" type="box" pos="-0.1475 0 0.18" size="0.0025 0.15 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_negative_xy_collision_east" type="box" pos="0.1475 0 0.18" size="0.0025 0.15 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_negative_xy_collision_south" type="box" pos="0 -0.1475 0.18" size="0.145 0.0025 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_negative_xy_collision_north" type="box" pos="0 0.1475 0.18" size="0.145 0.0025 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_negative_xy_collision_divider_x" type="box" pos="0 0 0.18" size="0.0025 0.145 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_negative_xy_collision_divider_y_w" type="box" pos="-0.07375 0 0.18" size="0.07125 0.0025 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <geom name="rmuc2027_dock_negative_xy_collision_divider_y_e" type="box" pos="0.07375 0 0.18" size="0.07125 0.0025 0.02" contype="1" conaffinity="1" group="3" rgba="0 .8 .4 0" friction=".8 .01 .001" solref=".01 1" solimp=".95 .99 .001" />
+      <site name="rmuc2027_dock_negative_xy_dock_frame" size=".002" rgba="0 0 0 0" />
+      <site name="rmuc2027_dock_negative_xy_slot_1" pos="-0.07375 -0.07375 0.16" type="box" size=".055 .055 .0005" rgba="0 0 0 0" />
+      <site name="rmuc2027_dock_negative_xy_slot_2" pos="-0.07375 0.07375 0.16" type="box" size=".055 .055 .0005" rgba="0 0 0 0" />
+      <site name="rmuc2027_dock_negative_xy_slot_3" pos="0.07375 -0.07375 0.16" type="box" size=".055 .055 .0005" rgba="0 0 0 0" />
+      <site name="rmuc2027_dock_negative_xy_slot_4" pos="0.07375 0.07375 0.16" type="box" size=".055 .055 .0005" rgba="0 0 0 0" />
+    </body>
+
+  </worldbody>
+</mujoco>

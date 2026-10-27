@@ -1,0 +1,1646 @@
+{
+  "source": {
+    "official_release": {
+      "url": "https://bbs.robomaster.com/article/1970956?source=1",
+      "author": "RoboMaster 高校赛务",
+      "title": "RMU 2027场地图纸&可移动道具开源",
+      "drawing": "RMUC2027_V1.0.0.stp",
+      "article_license": "CC BY-NC-SA 4.0; confirm applicability to the downloadable drawing and derived assets before redistribution or commercial use."
+    },
+    "repository": "https://github.com/shiuhou/scene",
+    "commit": "a4f31da5e724a0dc7bd6ecef59221c838833975c",
+    "commit_date": "2026-10-16T21:45:56+08:00",
+    "subject": "Add RMUC2027 V1 CAD model",
+    "files": {
+      "RMUC2027_V1.step": {
+        "sha256": "a04b6c9e7b337071ba06c9e0a81792d17369d721c7b593b638de2b04cc24333e",
+        "size_bytes": 659052845
+      },
+      "RMUC2027_V1.SLDASM": {
+        "sha256": "91d362f1572f28fcd1581236914d9a17402f79b7c0b0809c2b2fa4a85d59d658",
+        "size_bytes": 347161849
+      }
+    },
+    "license": "No license file was present in the source repository; preserve upstream ownership and verify permission before redistribution."
+  },
+  "conversion": {
+    "reader": "OpenCascade STEPControl_Reader",
+    "cad_units": "millimetres",
+    "runtime_units": "metres",
+    "cad_axes": "preserved",
+    "linear_deflection_mm": 5.0,
+    "angular_deflection_rad": 0.5,
+    "tessellated_triangles": 3530619,
+    "quadric_decimation_ratio": 0.2,
+    "runtime_triangles": 706123,
+    "visual_mesh_sha256": "97ba9629c94a9ae7d0bbea66bc99a842d8246f3096bba21536f70a35391bfe72"
+  },
+  "cad_audit": {
+    "placed_solid_occurrences": 629,
+    "faces_outside_solids": 57888,
+    "bounds_mm": [
+      [
+        -13999.988846843245,
+        -6377.22189523,
+        -1941.343676495
+      ],
+      [
+        14000.003260053249,
+        9625.90924823,
+        1857.343670365489
+      ]
+    ],
+    "limitations": "Bounds and occurrence counts come from STEPControl_Reader placement inventory; no field labels or collision semantics were inferred."
+  },
+  "semantics": {
+    "visual": "PASS: original field meshes unchanged; 118 explicit user-requested side closure pieces added. Visual openings are sealed while robot tunnels remain open in sampled passage checks.",
+    "collision": "PASS within declared sampled 6 mm tolerance: dense source-face centroids, top/four-side rays, repair hull surface samples, all 18303 repair contact probes; 224 bounded tunnel rays unchanged. See collision_model.validation and limits.",
+    "targets": "NOT_RUN: no target or gameplay semantics are present in the source CAD",
+    "runtime": "PASS: standalone directory compiled and ten dynamic spheres stepped at 2 ms on MuJoCo 3.15.0; static fusion preserves all geom/site world transforms."
+  },
+  "visual_update": {
+    "source_package": "RMUC2027_MuJoCo_V1.zip (user supplied)",
+    "source_package_sha256": "2d1be9b747c15645a270a27be4398b24f8fe512b69b43d7d345da9bd8e2db004",
+    "mesh_count": 131,
+    "triangle_count": 3488788,
+    "mesh_files": [
+      {
+        "file": "visual_000.msh",
+        "sha256": "ef805d66cd406426153d2c132ab08f49f4672d0047d83574fc529ee1090637e0",
+        "size_bytes": 3256
+      },
+      {
+        "file": "visual_001.msh",
+        "sha256": "e31c07fe4557c941bfd03ae30e21b2f20544a3e1a9bba941e5b12a732dad7c11",
+        "size_bytes": 6522124
+      },
+      {
+        "file": "visual_002.msh",
+        "sha256": "911d8bd31689e9641e2599eed7d4c8afb1c428ecdd20471ed4975ab22970c601",
+        "size_bytes": 147088
+      },
+      {
+        "file": "visual_003.msh",
+        "sha256": "c73fb6a00418a768db846fa2fed6ae874fa44f81a83297257fce50f78955c7f3",
+        "size_bytes": 3256
+      },
+      {
+        "file": "visual_004.msh",
+        "sha256": "3e613dee94e7eeb7ecc20c0280f179be7fcab51120550234ba321493d1eac1a7",
+        "size_bytes": 455764
+      },
+      {
+        "file": "visual_005.msh",
+        "sha256": "6b7df1713e798917fc14c3c925370a90bd54f402bb0f3858e12c2f7aaf48f94e",
+        "size_bytes": 42664
+      },
+      {
+        "file": "visual_006.msh",
+        "sha256": "2badff7a3b29257c58be9289c5840d603b0712077406a8134370ce97646f3886",
+        "size_bytes": 49648
+      },
+      {
+        "file": "visual_007.msh",
+        "sha256": "671466803b45c3aa61e1eabdc690758ada0fd46fea6e58219133dab7016ed009",
+        "size_bytes": 49648
+      },
+      {
+        "file": "visual_008.msh",
+        "sha256": "97503b2b9ac10487621bea40dad03af50f704f3c56abf4834cdcd14f175c20f8",
+        "size_bytes": 3618364
+      },
+      {
+        "file": "visual_009.msh",
+        "sha256": "8bcc6300e06d70d0e7272ec1475ca9990584c6340b95a79c6ac008aadaebd701",
+        "size_bytes": 6433636
+      },
+      {
+        "file": "visual_010.msh",
+        "sha256": "3027d30b7c1902e0ced94a34bd6338da21f72ae287003b7b49a81b80e0d04889",
+        "size_bytes": 60808
+      },
+      {
+        "file": "visual_011.msh",
+        "sha256": "5c23adb182b46743323919019b4811adbab684a6d47ab09746c92ded8e616e06",
+        "size_bytes": 5152
+      },
+      {
+        "file": "visual_012.msh",
+        "sha256": "f802a6624b2a5f0e82dae1734557533f3c41a64ca82924bcf64251903d439700",
+        "size_bytes": 1504
+      },
+      {
+        "file": "visual_013.msh",
+        "sha256": "32314851d9ed92ec1c55d21205a67ff039abb35a5fc1cf7ddb2ca72154fae78a",
+        "size_bytes": 539548
+      },
+      {
+        "file": "visual_014.msh",
+        "sha256": "377539a657408b5f9bef634a3bd938a786865525290ede4d17c6019964388cef",
+        "size_bytes": 13648
+      },
+      {
+        "file": "visual_015.msh",
+        "sha256": "6b5dde15776124c9a0e8114a2e6f4414c969310d3f6c9a5ca43aacc8ed004740",
+        "size_bytes": 151408
+      },
+      {
+        "file": "visual_016.msh",
+        "sha256": "099ada5967a298c6b362a152abb8c4b636c6a3310cc4ab241179c79fb29e69cd",
+        "size_bytes": 65440
+      },
+      {
+        "file": "visual_017.msh",
+        "sha256": "42a0af10b2860e5586134d243ff8df7d53c92577517620da6ff0e76fdf31c681",
+        "size_bytes": 446944
+      },
+      {
+        "file": "visual_018.msh",
+        "sha256": "23753aea6bcfb9f3457ac32d50352216ce7ebf7f4abebd2b12d43be72c91fa41",
+        "size_bytes": 5225236
+      },
+      {
+        "file": "visual_019.msh",
+        "sha256": "6b9a8bcdb599fd8c1628f84daa69812843ca6982686391838f791d04fef8dcb3",
+        "size_bytes": 344296
+      },
+      {
+        "file": "visual_020.msh",
+        "sha256": "fe6eca62aca9eab222548b5ae027874a02a66229757d5c3f2f73bb7f4c102657",
+        "size_bytes": 19840
+      },
+      {
+        "file": "visual_021.msh",
+        "sha256": "a272b372f419382aee79e7cf63fba143e9a6c77957e7b71f96b24e017211beb0",
+        "size_bytes": 79456
+      },
+      {
+        "file": "visual_022.msh",
+        "sha256": "ce031d7b05a0548ea67db092f7b691c2d1d09a92c75b600aacd593e236286fe2",
+        "size_bytes": 101440
+      },
+      {
+        "file": "visual_023.msh",
+        "sha256": "50cfd0f964fa5f2f57f5d4e4810eb3fd572ca10afa4b18a402372036637990ee",
+        "size_bytes": 73516
+      },
+      {
+        "file": "visual_024.msh",
+        "sha256": "27d14123a9808d6a86f959c8a1b5db51ea5abc61d29b20c354769b5e399f060d",
+        "size_bytes": 79744
+      },
+      {
+        "file": "visual_025.msh",
+        "sha256": "017bfc1a8c3ad391eeadd5ac0819acff05efb910d825eee110a8f1946eff5d9c",
+        "size_bytes": 63688
+      },
+      {
+        "file": "visual_026.msh",
+        "sha256": "9fef023d9559e3efefae3d73a4a7cbed67cbfa03013b663f25ab5b826d11b2cc",
+        "size_bytes": 1422040
+      },
+      {
+        "file": "visual_027.msh",
+        "sha256": "5f8e7fa6ee66f6a6a41523285a19364c6f7d9e00e2cf2c7169f722e43e9831bd",
+        "size_bytes": 64912
+      },
+      {
+        "file": "visual_028.msh",
+        "sha256": "c9e7377357caea63864f787a60cf75e1305e06b16cf1a64bf6e76ea438025155",
+        "size_bytes": 44224
+      },
+      {
+        "file": "visual_029.msh",
+        "sha256": "e2016a0cc83d232f3847bd5bded8547b1f9875c9faf378df45ed02890018c01b",
+        "size_bytes": 1555108
+      },
+      {
+        "file": "visual_030.msh",
+        "sha256": "33e672931592e07dbebacca404e1054f33608c027020b93ed6bb35dfe1f94363",
+        "size_bytes": 1927516
+      },
+      {
+        "file": "visual_031.msh",
+        "sha256": "a445d6fdaeffa00f28c6b10a3893383a8d8b40b14c7e1b009a2e587e8263685f",
+        "size_bytes": 26476
+      },
+      {
+        "file": "visual_032.msh",
+        "sha256": "bce6a20d2e8d5233444d0abf73870a785f6e07ecfb9fa240a342d269564cafaa",
+        "size_bytes": 25576
+      },
+      {
+        "file": "visual_033.msh",
+        "sha256": "fdc2b2b2b3762c465b53c6161e9db4d37dec88f9f7d6a74ab6d1ebbf81deb2f4",
+        "size_bytes": 200572
+      },
+      {
+        "file": "visual_034.msh",
+        "sha256": "4071e8ba08a751b57e833fc3508355f57b685f88bc081dc995b88f6a245c562a",
+        "size_bytes": 128716
+      },
+      {
+        "file": "visual_035.msh",
+        "sha256": "aed93f5417a6558ccad47fcff1d6bd5322bd813e5a4207d58bbc3a7809021235",
+        "size_bytes": 86032
+      },
+      {
+        "file": "visual_036.msh",
+        "sha256": "f8b1227bb97ba7e295d8715dc91b380fe0657f5bb4c285ba68114d21e480c68a",
+        "size_bytes": 8776
+      },
+      {
+        "file": "visual_037.msh",
+        "sha256": "14b2ee13e54915937e013fa9f9386ee6b4cd8f8ea91d8a88c9997a95183bd835",
+        "size_bytes": 56740
+      },
+      {
+        "file": "visual_038.msh",
+        "sha256": "c1a3965eb62085880441543ff2865108183e19618ede9735e8ea4d4c5db2ee9a",
+        "size_bytes": 64180
+      },
+      {
+        "file": "visual_039.msh",
+        "sha256": "4a9c712a75d3cf6f760c10cdc90438da4738a812f918a6615eac46573e1cb5f0",
+        "size_bytes": 4636
+      },
+      {
+        "file": "visual_040.msh",
+        "sha256": "b21ba5a93922fded129640292e87f4dec8c0b036681a2522576a044d83017ad6",
+        "size_bytes": 10240
+      },
+      {
+        "file": "visual_041.msh",
+        "sha256": "43639907ed5385cf13fe711afa12ce66551c8b898d455b4425c106623845edf8",
+        "size_bytes": 664
+      },
+      {
+        "file": "visual_042.msh",
+        "sha256": "0d4ab8ed5fa02847906c0996bf0a40376716f4ed1e8d5a873e4c0c1c77bd0b6d",
+        "size_bytes": 50824
+      },
+      {
+        "file": "visual_043.msh",
+        "sha256": "1feec70840d82be4f87c4c04ea8d2c4854ae5ccc513dc7d2a568a8ef9ce7fd34",
+        "size_bytes": 64948
+      },
+      {
+        "file": "visual_044.msh",
+        "sha256": "0ebcc90eb41b1c7fc61ed4e0bb5634671a588b12be366ee1f42f893298850b63",
+        "size_bytes": 44224
+      },
+      {
+        "file": "visual_045.msh",
+        "sha256": "10809f278afcc19fbed1b4cfcb0092c4d8a261c4692c2b513dd0514f306ea944",
+        "size_bytes": 1554496
+      },
+      {
+        "file": "visual_046.msh",
+        "sha256": "754f088e040f50593c70d2e9f78783552fecd120057d38758140170ff04a336c",
+        "size_bytes": 1927048
+      },
+      {
+        "file": "visual_047.msh",
+        "sha256": "e991338fd1156532e32dba41fc8071b428a7ff354a9150e17b5e1254c97820f3",
+        "size_bytes": 26476
+      },
+      {
+        "file": "visual_048.msh",
+        "sha256": "2cdf689d57300e84f841392446338d1549519a12337fb73d91b799a0b9a96018",
+        "size_bytes": 25576
+      },
+      {
+        "file": "visual_049.msh",
+        "sha256": "21f8f90f614d985615073e387dd851e705bce4f55396233b0f1f1795a3d90854",
+        "size_bytes": 200248
+      },
+      {
+        "file": "visual_050.msh",
+        "sha256": "72949dd751ef58e3a364b2eaa6a6351e6d491b7f8a2a8b942c5022a283b9c197",
+        "size_bytes": 128752
+      },
+      {
+        "file": "visual_051.msh",
+        "sha256": "7ed1b78f1a81d78983cf79c33e58f1fd4ffbf0c3e7a3b7655eeb71c2c90ab510",
+        "size_bytes": 86068
+      },
+      {
+        "file": "visual_052.msh",
+        "sha256": "d8d0c2f055f6207076119f32b70995f4406f3906c822f0cb28c0c9189a5162fc",
+        "size_bytes": 8776
+      },
+      {
+        "file": "visual_053.msh",
+        "sha256": "2dbab9ca6da6c3b32fd00abfea0f44b36ea8dd91f5f9b39a81649e1d840d7e5b",
+        "size_bytes": 56740
+      },
+      {
+        "file": "visual_054.msh",
+        "sha256": "d9862bc0a06d7ceece1d2066291640ef35a91b17aa67b88a7eae6f9676c63c61",
+        "size_bytes": 64252
+      },
+      {
+        "file": "visual_055.msh",
+        "sha256": "52c854dde4f75adee75dd2c17282bed7bdf807c795941b8bd474c3c80e8cf972",
+        "size_bytes": 4636
+      },
+      {
+        "file": "visual_056.msh",
+        "sha256": "3063ad0da032ea81d78aa9a832d81b6a5a24fa7278ffdc153f02ac6ca15e95a7",
+        "size_bytes": 10240
+      },
+      {
+        "file": "visual_057.msh",
+        "sha256": "62d1edd2a6fcf86feb0c14f544a850585b72585f29ba40996d3ea02628441668",
+        "size_bytes": 664
+      },
+      {
+        "file": "visual_058.msh",
+        "sha256": "cf402e9b6bc445af99f3ab216b68a9d33972bf0f0f728ef322cb6029fe89a974",
+        "size_bytes": 50824
+      },
+      {
+        "file": "visual_059.msh",
+        "sha256": "91c8ceadb8a92f9268093d1f3b0acf19a1f8c6800244e0b1e1318b25bc1c80eb",
+        "size_bytes": 12616
+      },
+      {
+        "file": "visual_060.msh",
+        "sha256": "283ef5c165052e8285678384086a62a229caba4ad9c96d28ff2528758e16b0a0",
+        "size_bytes": 2632
+      },
+      {
+        "file": "visual_061.msh",
+        "sha256": "da1ece42aa4242d51771feb58857b96b186c400ff5694821292228b70ac644b7",
+        "size_bytes": 736
+      },
+      {
+        "file": "visual_062.msh",
+        "sha256": "11555db1c21d40628ebe45245d1a11aaf80dd280ca3fe1f06082ad0ec389844e",
+        "size_bytes": 2944
+      },
+      {
+        "file": "visual_063.msh",
+        "sha256": "fac9ff51542496eaee7ddd47c295189f1a739923eb7600f2ceca983566eb1014",
+        "size_bytes": 448
+      },
+      {
+        "file": "visual_064.msh",
+        "sha256": "0d7af90abd4ce45f3b0a12a7dc74656b3b9ac06a243914cb95009c763b47e4a8",
+        "size_bytes": 1984
+      },
+      {
+        "file": "visual_065.msh",
+        "sha256": "421169da91678aa292644c859676c3c1e9686b4c88f418754a762b4bd9e2584b",
+        "size_bytes": 4540
+      },
+      {
+        "file": "visual_066.msh",
+        "sha256": "5bdc8493713012b8b2258e2672b8cc3935b3278bcbb363dd9b27e9a1bb0ba1f7",
+        "size_bytes": 3731452
+      },
+      {
+        "file": "visual_067.msh",
+        "sha256": "1d15bdfc6a273195b9171f4585e297a25529df9bfa5f87e5e22019150c8a3433",
+        "size_bytes": 3640
+      },
+      {
+        "file": "visual_068.msh",
+        "sha256": "0a86b66c748fbf6cec1c29f2be408c7f1027bbf2a4dccf17e37489ad66c7b620",
+        "size_bytes": 160
+      },
+      {
+        "file": "visual_069.msh",
+        "sha256": "b19e5386bd3b111c104808d6d5a9ac97da7b7998de3d6c5353cd0fa8625c61f5",
+        "size_bytes": 3506908
+      },
+      {
+        "file": "visual_070.msh",
+        "sha256": "3ca057b010d3f85cff13e12e19f065c6dd17ef951afb082496c0f1bd2acf5d1d",
+        "size_bytes": 113320
+      },
+      {
+        "file": "visual_071.msh",
+        "sha256": "32480bd09238bf33b650499ef628ac7cbc0f3d25811755746a74b7de7f197780",
+        "size_bytes": 53044
+      },
+      {
+        "file": "visual_072.msh",
+        "sha256": "896eda4ce9cb86f2818c6ca6d0aeb70c7b2c11eac12ca2799cc5313c81de287a",
+        "size_bytes": 337960
+      },
+      {
+        "file": "visual_073.msh",
+        "sha256": "1fed6fbefbe63474849e2de88f62ad55b3c204675411c0210d047152b23ce1fe",
+        "size_bytes": 12172
+      },
+      {
+        "file": "visual_074.msh",
+        "sha256": "e6c2bd36cee886c9e639f05e5ed61da7c57e2bfc4abd13c82488b9232e74871e",
+        "size_bytes": 2944
+      },
+      {
+        "file": "visual_075.msh",
+        "sha256": "f3b06e9a675be18070629442e098e23e32525cee87cacc9c0003e1e17b5f8e8c",
+        "size_bytes": 2632
+      },
+      {
+        "file": "visual_076.msh",
+        "sha256": "cbad1fe06b9e5eb4792e358c3f0f12e10b87fc6536edf387a5e03d8256cbd75c",
+        "size_bytes": 544
+      },
+      {
+        "file": "visual_077.msh",
+        "sha256": "06ce63e46fc7ad74c27bed311cb3f62e0212e7c54898aedc5098c313f99a24af",
+        "size_bytes": 4540
+      },
+      {
+        "file": "visual_078.msh",
+        "sha256": "056be6270df9da54be89aa624171aa76919320e6c4888273bfc0f2ce61d21684",
+        "size_bytes": 3731236
+      },
+      {
+        "file": "visual_079.msh",
+        "sha256": "e6ab669e55006344b34d4b60361851de97d242cf9e5affc0dae5568ad94ba034",
+        "size_bytes": 3640
+      },
+      {
+        "file": "visual_080.msh",
+        "sha256": "7c49bca42ade61e6fef789cb40a2d21e83845ffb1bd01da6e7ab8b6c3b1dbce5",
+        "size_bytes": 160
+      },
+      {
+        "file": "visual_081.msh",
+        "sha256": "fc397aa01e52225ad45559c890b0586be69dff10a120c38742cf9b23157deccb",
+        "size_bytes": 3505588
+      },
+      {
+        "file": "visual_082.msh",
+        "sha256": "b390940500660d13b999950686730b5c2f3865999ccfd983ae8020e8f605bfaf",
+        "size_bytes": 113284
+      },
+      {
+        "file": "visual_083.msh",
+        "sha256": "c25be4d9a1582c33eb567d1cecd1a355c82dd64e91d6db68c43328daecf3ef34",
+        "size_bytes": 52720
+      },
+      {
+        "file": "visual_084.msh",
+        "sha256": "564d923ba719c473a34db44635ad91322f07320e0331b0026bb754f428e3f4db",
+        "size_bytes": 337960
+      },
+      {
+        "file": "visual_085.msh",
+        "sha256": "787555242bebfce43e4be96c7e0444db9ddb21aa001abce93ee8680dae09ee33",
+        "size_bytes": 504328
+      },
+      {
+        "file": "visual_086.msh",
+        "sha256": "b0da8153cabb930b0d87ccf1f3be4b8b267b6189605f72646fd9a679c6f4ef69",
+        "size_bytes": 858412
+      },
+      {
+        "file": "visual_087.msh",
+        "sha256": "ac1239d5f15510c970128479af4c5e5a88baeb99157e4bf5a780d2aa8c1cfb3f",
+        "size_bytes": 42496
+      },
+      {
+        "file": "visual_088.msh",
+        "sha256": "6a6bab54c178c7afb11c017535fc9de0139e48dd1bbd9d624a2dfe50574ec83e",
+        "size_bytes": 352
+      },
+      {
+        "file": "visual_089.msh",
+        "sha256": "162553ac4cfc33f4bc71c355a89f1e8d56f216040844b06c1b9d22263a142dde",
+        "size_bytes": 7216
+      },
+      {
+        "file": "visual_090.msh",
+        "sha256": "d568300fbba53e6daaf5c87a30036e8fd7b16bdd7f30dc5ce76922c022a89c6c",
+        "size_bytes": 871828
+      },
+      {
+        "file": "visual_091.msh",
+        "sha256": "2772b3c7003fb23f799824792c6cda049e17473c4ecb4e131ed7283b81a8741c",
+        "size_bytes": 44944
+      },
+      {
+        "file": "visual_092.msh",
+        "sha256": "3607defc3facf0b5e1760d0295b5eec311b7f51a72cc004791413f0b81fed300",
+        "size_bytes": 504088
+      },
+      {
+        "file": "visual_093.msh",
+        "sha256": "b9e6214c2303159a7f46cf0cbe84fe3d50ae482ac1beb76e464b93935cdfebb4",
+        "size_bytes": 504148
+      },
+      {
+        "file": "visual_094.msh",
+        "sha256": "694a32c71d403de427b6abd5a8ab358b3d19e11cd44ebf2381c5560d882def73",
+        "size_bytes": 856576
+      },
+      {
+        "file": "visual_095.msh",
+        "sha256": "9a4a49dce397e87cc858bfccdc30e47df6d7761dacb3ea8005d35594daeb874f",
+        "size_bytes": 42496
+      },
+      {
+        "file": "visual_096.msh",
+        "sha256": "9aa8ea5ee2e7d78ad446fb70eb90fea7f852638822558962464670a21bd15ab9",
+        "size_bytes": 352
+      },
+      {
+        "file": "visual_097.msh",
+        "sha256": "a8f49bf8da144ffc8634b0b945930b2202a639d8d1546127dc1fa56002065929",
+        "size_bytes": 7216
+      },
+      {
+        "file": "visual_098.msh",
+        "sha256": "282096f89afee34d0f8040ffbbf185cea32db5f05e08193f7990640f5c492881",
+        "size_bytes": 868336
+      },
+      {
+        "file": "visual_099.msh",
+        "sha256": "f4efe0501e0ef3a21679eec81c7068f8e000efdb0f6add068908575d885c291c",
+        "size_bytes": 44944
+      },
+      {
+        "file": "visual_100.msh",
+        "sha256": "11e019dedffdee6be0c744a61f06b3f9adf74bfe6e4d351e0c62dfc03bfbed63",
+        "size_bytes": 504916
+      },
+      {
+        "file": "visual_101.msh",
+        "sha256": "0867f5af5c72f33254e86e48f1b3e49dccbf8f9aee86447b53ed641cd073aa91",
+        "size_bytes": 3556
+      },
+      {
+        "file": "visual_102.msh",
+        "sha256": "ccfdbd38fea3b154f28db33f325bf53c56081ad496001fe734ec9d62fd7e4299",
+        "size_bytes": 520
+      },
+      {
+        "file": "visual_103.msh",
+        "sha256": "333b7d9e3e18f42682b6e6f991d1cfc5b67242c19df0cd644cb7dc4042bc9023",
+        "size_bytes": 616
+      },
+      {
+        "file": "visual_104.msh",
+        "sha256": "ff1969fc747873c1c24cd63f31cd400cba0c7ddb4e7c76a380c4cfcf0ce1835f",
+        "size_bytes": 3556
+      },
+      {
+        "file": "visual_105.msh",
+        "sha256": "95733eef175c8f14257f5d3dc38422cbd9a3996b2aea32d4e27849adc04b4b75",
+        "size_bytes": 520
+      },
+      {
+        "file": "visual_106.msh",
+        "sha256": "46a1b8598f7fa0cf813a171b30a5d6cb56c175b15c82f81d535e767db271aa8d",
+        "size_bytes": 616
+      },
+      {
+        "file": "visual_107.msh",
+        "sha256": "5865a65247ba2bd917d1f590ca69ebf765c3364c7699ab1e18ac66cd5d385b69",
+        "size_bytes": 1096
+      },
+      {
+        "file": "visual_108.msh",
+        "sha256": "a9b046856040d44dcd1512de16d472777b6639b3fcb75de310f4b77c1fb488ff",
+        "size_bytes": 18568
+      },
+      {
+        "file": "visual_109.msh",
+        "sha256": "1be705ace79fa8aefb6cda6d45b3812dd281b35d7767c8d4fb5103a7a7d19789",
+        "size_bytes": 2036128
+      },
+      {
+        "file": "visual_110.msh",
+        "sha256": "2cdae65203bb75c97617ce9be50fccfda250cee1a092c1ec174668c9948caac2",
+        "size_bytes": 14920
+      },
+      {
+        "file": "visual_111.msh",
+        "sha256": "91efc1b975340d3a3d84b0756646d3aebdc3e228716748342bba067258406e6d",
+        "size_bytes": 1096
+      },
+      {
+        "file": "visual_112.msh",
+        "sha256": "975d7275e9bdd12a06c322fa8258ff55bddbb34bbd5b6220c1a03071aa4ea899",
+        "size_bytes": 18568
+      },
+      {
+        "file": "visual_113.msh",
+        "sha256": "26898eaa739e180889041d9ce51c37c2f29896bbf34386d5b0b4cd8099e0b9d0",
+        "size_bytes": 2032396
+      },
+      {
+        "file": "visual_114.msh",
+        "sha256": "bed8a209a8f867127a2ba749987bcbdf153981930a6ad4232381777ce8390163",
+        "size_bytes": 14920
+      },
+      {
+        "file": "visual_115.msh",
+        "sha256": "b17bc880f01a6b22a2776408b2e90c2bb7e10442d6370af4ab3d1058686d9a65",
+        "size_bytes": 981628
+      },
+      {
+        "file": "visual_116.msh",
+        "sha256": "60a6eb8a755f09744bd993e1e858f3ec8857260e562a1067cfdd1f182eefe1e3",
+        "size_bytes": 4636
+      },
+      {
+        "file": "visual_117.msh",
+        "sha256": "a2a8b644062e211e3ff61b8e58d9f879f74342c49e35f1ce139e3337d28a8b31",
+        "size_bytes": 60712
+      },
+      {
+        "file": "visual_118.msh",
+        "sha256": "d101f0be283176191bfeb9c08814b582915bf51728b9109834b1343f81cfc0ad",
+        "size_bytes": 83380
+      },
+      {
+        "file": "visual_119.msh",
+        "sha256": "181adc7c1d0398d52396ff326c767a25ab9c5fe12e2752fc6f320f43230d58ea",
+        "size_bytes": 1860124
+      },
+      {
+        "file": "visual_120.msh",
+        "sha256": "10b743cd2648921fab92d37c608b672c058194e002d9d888ae62438b9e49a2b1",
+        "size_bytes": 59848
+      },
+      {
+        "file": "visual_121.msh",
+        "sha256": "bfcb364b49bd67156b0aca3ab7100d9848e2e75f1cd1bf8020e1974cb59503b2",
+        "size_bytes": 59800
+      },
+      {
+        "file": "visual_122.msh",
+        "sha256": "2f0921373acc852d01f1c5c9ada1c1088cb985846e76ca9b7a14fc5ebc7df166",
+        "size_bytes": 8272
+      },
+      {
+        "file": "visual_123.msh",
+        "sha256": "4729c5e39b35d26e8f29cd1230e9dfd92a4903a72d88c30765acfc4f9d430bf4",
+        "size_bytes": 978952
+      },
+      {
+        "file": "visual_124.msh",
+        "sha256": "fe849c2b36ce8283e27a3aed8294d4db6a5de39c1c2c1203c76b195c8ca9d333",
+        "size_bytes": 4636
+      },
+      {
+        "file": "visual_125.msh",
+        "sha256": "1b79dc136504f75f54300374aab2e47197493727e677894bc78ec327d46c85d1",
+        "size_bytes": 60712
+      },
+      {
+        "file": "visual_126.msh",
+        "sha256": "b1f10b171900da279106f90b97aa7a03a1a03ec86a309f24fc4dc8ae1fb35fc2",
+        "size_bytes": 84124
+      },
+      {
+        "file": "visual_127.msh",
+        "sha256": "6d541dfd8fe3247c2e91b16157282573a810be20564c1313611518b4cd740603",
+        "size_bytes": 1858012
+      },
+      {
+        "file": "visual_128.msh",
+        "sha256": "942c72f8e2a9cb953c044a5712a1f654680b71a18b74e206df723d60996da8d1",
+        "size_bytes": 59848
+      },
+      {
+        "file": "visual_129.msh",
+        "sha256": "c70d0da174f6814f8b3ae40e3d4fff7af4da4e020fefc1ef949123a4a088d5c4",
+        "size_bytes": 60340
+      },
+      {
+        "file": "visual_130.msh",
+        "sha256": "bc474552e9623e473b5adb684a25d16053c772bca2f65d3bbaf4730f3702ab39",
+        "size_bytes": 8272
+      }
+    ],
+    "mesh_manifest_sha256": "9bb337d3d1705e45e3b0282aa908d1b50347c4e7e581f5e54ba35ae356ff8f40",
+    "material_encoding": "per-geom display RGBA from user MuJoCo visual export; no texture files",
+    "visual_geom_count": 131,
+    "visual_contype": 0,
+    "visual_conaffinity": 0,
+    "runtime_xml": [
+      "model.xml",
+      "visual_assets.xml",
+      "visual_geoms.xml",
+      "collision_assets.xml",
+      "collision_geoms.xml"
+    ],
+    "output_sha256": {
+      "model.xml": "727b8f7f5a4ac02985059c5873dc23a7ee601f1f282aa88ca741b4c42d4df51f",
+      "visual_assets.xml": "16d054075c05d5b1e59205e9f090521cb5a419436865901ece7004a37fd78720",
+      "visual_geoms.xml": "595546a5814861e4a386cfe3998d1daba95ad55693313ab540ed423470b26277",
+      "collision_assets.xml": "cb773199d54c4d6b1bc0c0dd2ea2ad4934f513bdc71a038cc22b9f6b4f0a3b77",
+      "collision_geoms.xml": "73626059542eda9560796a8467c1c801388aeaa3b131b1ed45266d745923ca5e"
+    }
+  },
+  "dock_addition": {
+    "source_entry": "rm27_drone_mjcf/dock/model.xml",
+    "source_entry_sha256": "e4c00ba27ae729d3ebd20608cae9885f4e82a318e258e0732c5765bc7a0c1bba",
+    "source_mesh": "rm27_drone_mjcf/dock/assets/rm27_dock_visual.obj",
+    "source_mesh_sha256": "2011f0f380ca0a830d83444a1d179b2a1e986ae571de38934d0bcfb018771a47",
+    "mesh_transform": "v_local = Rz(-45 degrees) * (v_source - [0.651751442,1.186726189,1.58]); metres",
+    "mesh_sha256": "19cfabe5cff3db427a56836eb78598707833492295e9116376f62cb14290d648",
+    "placement": "Two H-marked CAD platform centers measured from visual_020 vertices at z=1.6 m; XY = +/-(1.03237595,1.03237595); yaw=45 degrees",
+    "count": 2,
+    "collision_geoms_per_dock": 8,
+    "semantics": "Reuse legacy four-slot dock approximation; not an official CAD structure or certified contact model",
+    "validation": {
+      "mujoco_version": "3.12.0",
+      "clean_copy_load_forward_step": "PASS",
+      "egl_platform_alignment": "PASS",
+      "slot_contact_probes": 8,
+      "probe_radius_m": 0.015,
+      "steps": 1000,
+      "probe_settled_z_m": 1.7748256324590832,
+      "all_probes_contact_dock_bottom": true
+    }
+  },
+  "retired_collision_baseline": {
+    "method": "one axis-aligned bounding box per placed STEP solid",
+    "geom_count": 629,
+    "model_sha256": "1c30272c080445cc8237cfff3f280d58010695fb1a0f7f6855c5d6a1c1dcd46d",
+    "surface_audit": {
+      "load_seconds": 0.8917157249525189,
+      "ngeom": 788,
+      "top_samples": 11200,
+      "top_valid_samples": 11200,
+      "top_above_2cm": 10250,
+      "top_below_2cm": 180,
+      "top_p95_error_m": 0.5335134858894018,
+      "top_max_error_m": 2.7923528927114836,
+      "side_rays": 15400,
+      "side_visual_hits": 3726,
+      "side_missing_hits": 270,
+      "side_extra_hits": 732,
+      "side_over_2cm": 2854,
+      "side_p95_error_m": 11.05843947619281
+    },
+    "reason": "Whole-solid AABBs filled free space and omitted faces; replaced by convex partitions of actual visual surfaces."
+  },
+  "collision_model_baseline": {
+    "method": "convex partitions of bounded-error surface planes; finite centered shells",
+    "minimum_patch_area_m2": 0.001,
+    "maximum_plane_displacement_m": 0.001,
+    "shell_thickness_m": 0.005,
+    "outline_simplification_m": 0.002,
+    "minimum_hole_width_m": 0.01,
+    "collision_geoms": 41371,
+    "unique_collision_meshes": 27133,
+    "mesh_sharing_grid_m": 1e-05,
+    "box_fit_tolerance_m": 0.0001,
+    "outputs": {
+      "collision_assets.xml": "cb773199d54c4d6b1bc0c0dd2ea2ad4934f513bdc71a038cc22b9f6b4f0a3b77",
+      "collision_geoms.xml": "73626059542eda9560796a8467c1c801388aeaa3b131b1ed45266d745923ca5e"
+    },
+    "contact_priority": 1,
+    "contact_solref": [
+      0.004,
+      1
+    ],
+    "source_layer": "visual_update.mesh_files, placed according to visual_geoms.xml; dock additions excluded",
+    "field_box_geoms": 3257,
+    "field_mesh_geoms": 38114,
+    "total_field_and_dock_geoms": 41387,
+    "contype": 1,
+    "conaffinity": 1,
+    "regenerator": "rm_uav_mujoco: python -m rm27_sim.simulation.field_collision MODEL OUTPUT",
+    "limits": "Minimum planar patches below 0.001 m^2 and some curved details omitted; small fastener holes filled; finite shell and silhouette effects remain. No exact CAD, whole-field certification or flight claim.",
+    "validation": {
+      "date": "2026-10-22",
+      "mode": "headless sphere contact and geometry audits; EGL appearance comparison",
+      "mujoco_version": "3.12.0",
+      "clean_directory_copy": true,
+      "timestep_s": 0.002,
+      "probe_radius_m": 0.015,
+      "drop_height_m": 1.0,
+      "drop_steps": 1000,
+      "normal_impact_speed_mps": 5.0,
+      "normal_impact_steps": 100,
+      "load_seconds": 156.41271270997822,
+      "ngeom": 41530,
+      "top_samples": 11200,
+      "top_valid_samples": 11200,
+      "top_above_2cm": 232,
+      "top_below_2cm": 13,
+      "top_p95_error_m": 0.0028822675793134245,
+      "top_max_error_m": 0.8678120225305568,
+      "side_rays": 15400,
+      "side_visual_hits": 3726,
+      "side_missing_hits": 8,
+      "side_extra_hits": 174,
+      "side_over_2cm": 375,
+      "side_p95_error_m": 0.09550393277659983,
+      "free_space": [
+        {
+          "point": [
+            5,
+            0,
+            0.1
+          ],
+          "contacts": 0
+        },
+        {
+          "point": [
+            -0.1,
+            0.5,
+            1.5
+          ],
+          "contacts": 0
+        }
+      ],
+      "ten_probe_1000_steps_seconds": 0.9404628840275109,
+      "drops": [
+        {
+          "position": [
+            5,
+            0,
+            -0.0010000039949744632
+          ],
+          "final_z": 0.013665789194921644,
+          "height_error": -0.00033420681010389204,
+          "contacts": 1
+        },
+        {
+          "position": [
+            13,
+            0,
+            -0.0008445487982058353
+          ],
+          "final_z": 0.009851076914723512,
+          "height_error": -0.004304374287070652,
+          "contacts": 1
+        },
+        {
+          "position": [
+            1.03237595,
+            0.9280776997749842,
+            1.76
+          ],
+          "final_z": 1.7748256324557412,
+          "height_error": -0.0001743675442587994,
+          "contacts": 1
+        },
+        {
+          "position": [
+            0.9280776997749842,
+            1.03237595,
+            1.76
+          ],
+          "final_z": 1.7748256324557412,
+          "height_error": -0.0001743675442587994,
+          "contacts": 1
+        },
+        {
+          "position": [
+            1.1366742002250159,
+            1.03237595,
+            1.76
+          ],
+          "final_z": 1.7748256324557412,
+          "height_error": -0.0001743675442587994,
+          "contacts": 1
+        },
+        {
+          "position": [
+            1.03237595,
+            1.1366742002250159,
+            1.76
+          ],
+          "final_z": 1.7748256324557412,
+          "height_error": -0.0001743675442587994,
+          "contacts": 1
+        },
+        {
+          "position": [
+            -1.03237595,
+            -1.1366742002250159,
+            1.76
+          ],
+          "final_z": 1.7748256324557412,
+          "height_error": -0.0001743675442587994,
+          "contacts": 1
+        },
+        {
+          "position": [
+            -1.1366742002250159,
+            -1.03237595,
+            1.76
+          ],
+          "final_z": 1.7748256324557412,
+          "height_error": -0.0001743675442587994,
+          "contacts": 1
+        },
+        {
+          "position": [
+            -0.9280776997749842,
+            -1.03237595,
+            1.76
+          ],
+          "final_z": 1.7748256324557412,
+          "height_error": -0.0001743675442587994,
+          "contacts": 1
+        },
+        {
+          "position": [
+            -1.03237595,
+            -0.9280776997749842,
+            1.76
+          ],
+          "final_z": 1.7748256324557412,
+          "height_error": -0.0001743675442587994,
+          "contacts": 1
+        }
+      ],
+      "side_impacts": [
+        {
+          "origin": [
+            15,
+            0,
+            0.3
+          ],
+          "target": [
+            12.111450148385789,
+            0.0,
+            0.3
+          ],
+          "impact_direction": [
+            -0.962858249057166,
+            0.0009023515778318506,
+            -0.2700058850917855
+          ],
+          "contacts": 7,
+          "past_surface_m": -0.18576849410823734
+        },
+        {
+          "origin": [
+            -15,
+            0,
+            0.3
+          ],
+          "target": [
+            -12.113055195053589,
+            0.0,
+            0.3
+          ],
+          "impact_direction": [
+            0.9628582541929622,
+            -0.0009020111209497497,
+            -0.27000586791478903
+          ],
+          "contacts": 7,
+          "past_surface_m": -0.18576776314983937
+        },
+        {
+          "origin": [
+            0,
+            9,
+            0.3
+          ],
+          "target": [
+            0.0,
+            1.646169457630939,
+            0.3
+          ],
+          "impact_direction": [
+            -0.06496538711482988,
+            -0.2317656743291156,
+            -0.9705999024725845
+          ],
+          "contacts": 4,
+          "past_surface_m": -0.18578488420735867
+        },
+        {
+          "origin": [
+            0,
+            -9,
+            0.3
+          ],
+          "target": [
+            0.0,
+            -1.6461750137130897,
+            0.3
+          ],
+          "impact_direction": [
+            0.06496497484772212,
+            0.2317611031649131,
+            -0.9706010215855007
+          ],
+          "contacts": 4,
+          "past_surface_m": -0.18578756490130144
+        },
+        {
+          "origin": [
+            0,
+            9,
+            0.1
+          ],
+          "target": [
+            0.0,
+            7.501831462806762,
+            0.1
+          ],
+          "impact_direction": [
+            -9.84309546314673e-07,
+            -0.9996572953476758,
+            0.026178079708050986
+          ],
+          "contacts": 4,
+          "past_surface_m": -0.18578285917829662
+        },
+        {
+          "origin": [
+            0,
+            -9,
+            0.1
+          ],
+          "target": [
+            0.0,
+            -7.501831538741555,
+            0.1
+          ],
+          "impact_direction": [
+            -7.65794224144575e-08,
+            0.9996573284876347,
+            0.026176814186594545
+          ],
+          "contacts": 4,
+          "past_surface_m": -0.18578683391594197
+        }
+      ],
+      "side_improved": true,
+      "passed": true
+    },
+    "appearance_validation": {
+      "renderer": "EGL",
+      "visible_pixels_identical": false,
+      "max_channel_difference": 1,
+      "identical_visual_geoms": 133,
+      "geometry_pose_color_identical": true,
+      "render_tolerance_channels": 1,
+      "passed": true
+    },
+    "converter_tests": "6 passed; includes concavity, touching holes, transformed surfaces, shared reflected shells and thin-shell drop/impact",
+    "simulator_suite": "161 passed in 83.46 seconds; no flight benchmark claim"
+  },
+  "collision_model": {
+    "method": "Retained partitioned shells, exact side closures, sampled ripple height fields, and source-face-derived convex patches; static bodies fused at compilation",
+    "collision_geoms": 56898,
+    "mesh_geoms": 53951,
+    "box_geoms": 2945,
+    "hfield_geoms": 2,
+    "visual_only_geoms": 251,
+    "contact_priority": 1,
+    "contact_solref": [
+      0.004,
+      1
+    ],
+    "outputs": {
+      "model.xml": "ff4198945debfa6bea55efb1e0f1bcc27e9b1b9cda423afe1ba5670136785f84",
+      "collision_assets.xml": "182fe16daf9693a557509a32615628a7157166e90e10044fd0d2342c1ae7d3b5",
+      "collision_geoms.xml": "e249beb7b228857c0f7d896767879f4a9a3033657e064764dce1612e15b704d1",
+      "closure_assets.xml": "57fe7e7ac5c1b1bcbe3eee7cce38c0bf6b1f4af7604f5a8249ce8a9e3c1f105b",
+      "closure_geoms.xml": "3780cf5b58769e8c76c1dc06366fb93c85508301eee17a10edf8cb6cddd47579",
+      "surface_repair_assets.xml": "6cd0853872ac5841216064217e830607e80e9e020852216df3f0fd0c6047c0d4",
+      "surface_repair_geoms.xml": "27ac29f4a67da6f0ed90767e3a281a50adce2e5962bb9e7c9815a41cebfe5b92",
+      "surface_repair_sources.json": "bea02b9013b7fa2273310ef7acdcb65c5cf3b3aaf8cbb860c2abe9f6bc784a95",
+      "assets/rmuc2027_ripple_positive.bin": "160d0336aa40da6d83a129191dfeb8867015f646e20682f4f6bebe492357b028",
+      "assets/rmuc2027_ripple_negative.bin": "e819b85521306c1c27202fe9b8418f3bf7688c73467db9dff9b7a68c85fdcf31"
+    },
+    "validation": {
+      "mujoco_version": "3.15.0",
+      "date": "2026-10-23",
+      "standalone_component": true,
+      "timestep_s": 0.002,
+      "surface_face_centroids": {
+        "area_threshold_m2": 1e-05,
+        "tested": 546343,
+        "outward_exposed": 364044,
+        "normal_ray_candidates": 58660,
+        "true_missing_over_6mm": 0,
+        "classification": "Exact nearest triangle distance for normal-ray outliers; source faces buried inside user-approved closures excluded."
+      },
+      "top_and_side_rays": {
+        "top": {
+          "hit_rays": 10500,
+          "raw_first_hit_over_2cm": 58,
+          "raw_first_hit_max_m": 2.566000010586221,
+          "checked_nearest_surface": 167,
+          "false_void_over_6mm": 0,
+          "false_solid_over_6mm": 0,
+          "max_checked_visual_to_collision_m": 0.005058535044348391,
+          "max_checked_collision_to_visual_m": 0.002743706738599087
+        },
+        "sides": {
+          "hit_rays": 4510,
+          "raw_first_hit_over_2cm": 420,
+          "raw_first_hit_max_m": 24.29999940974032,
+          "checked_nearest_surface": 620,
+          "false_void_over_6mm": 0,
+          "false_solid_over_6mm": 0,
+          "max_checked_visual_to_collision_m": 0.005670612612348562,
+          "max_checked_collision_to_visual_m": 0.002942549586815643
+        }
+      },
+      "repair_hull_samples": {
+        "patches": 18303,
+        "hull_surface_samples": 1251628,
+        "max_distance_m": 0.003786838765571236,
+        "over_6mm": []
+      },
+      "tunnels": {
+        "ray_count": 224,
+        "cutoff_m": 3,
+        "max_change_m": 0
+      },
+      "contact_and_performance": {
+        "version": "3.15.0",
+        "clean_component_probe_compile_s": 6.5881431200105,
+        "new_patch_contacts_tested": 18303,
+        "contact_failures": [],
+        "before": {
+          "median_step_ms": 0.9774885038495995,
+          "p95_step_ms": 1.0122305029653944,
+          "rtf": 2.0488287759440356,
+          "median_contacts": 10.0,
+          "p95_contacts": 11.0,
+          "max_contacts": 12
+        },
+        "after": {
+          "median_step_ms": 0.690531000145711,
+          "p95_step_ms": 0.7162350528233219,
+          "rtf": 2.8922750465031943,
+          "median_contacts": 10.0,
+          "p95_contacts": 10.0,
+          "max_contacts": 12
+        }
+      },
+      "static_fusion": {
+        "geoms": 57149,
+        "sites": 10,
+        "bodies_before": 6,
+        "bodies_after": 1,
+        "max_transform_error_m": 0
+      },
+      "ripple_validation": {
+        "samples": 2000,
+        "p95_m": 0.0032976129039316237,
+        "max_m": 0.0034383213887634323,
+        "over_6mm": 0,
+        "over_2cm": 0
+      }
+    },
+    "limits": "6 mm is a sampled geometric acceptance tolerance, not an everywhere or robot-motion guarantee. Faces <= 1e-5 m^2 are not exhaustively tested. Finite shell silhouettes can alter distant first-ray hits; record both raw ray discrepancy and nearest-surface distance. Legacy docks remain approximations. No controller, wheel traversal or high-speed impact certification."
+  },
+  "terrain_repair": {
+    "date": "2026-10-23",
+    "rules_reference": {
+      "filename": "UTF-8__RoboMaster 2027 机甲大师超级对抗赛比赛规则手册V1.0.0（20261015）.pdf",
+      "sha256": "9e2eed9295536c6fd547b62d634df1d5e70a2e1e2250e5dff3521d557e5d54be",
+      "sections": [
+        "4.1 field slope and recovery slots",
+        "4.3.1 trapezoidal highland",
+        "4.4.1 ripple road",
+        "4.4.2 traversable tunnel"
+      ]
+    },
+    "authorization": "User requested all black side openings closed; explicitly preserve traversable robot tunnels. This is a simulation alteration to official field geometry.",
+    "source_meshes": "All 131 original .msh files retain their visual_update manifest hashes. Source license/provenance unchanged.",
+    "closure_geometry": {
+      "convex_grille_covers": 14,
+      "radial_expansion_m": 0.001,
+      "side_plates": 4,
+      "plate_thickness_m": 0.005,
+      "plate_outline_factor": 1.003,
+      "wall_skirts": 100,
+      "skirt_thickness_m": 0.005,
+      "source_gap_height_range_m": [
+        0.012,
+        0.075
+      ],
+      "local_ground_equation": "z = -0.001 - abs(y) * tan(1.5 degrees)",
+      "visual_collision_pairing": "Same mesh asset and same transform, separate geom roles; no colliding visual geom.",
+      "locations": [
+        {
+          "name": "rmuc2027_side_closure_00",
+          "center_m": [
+            3.81183981012415,
+            -2.29603162518254,
+            0.068211169982398
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_01",
+          "center_m": [
+            -3.81183981012415,
+            2.29603162518254,
+            0.068211169982398
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_02",
+          "center_m": [
+            3.7521635736737933,
+            4.496749210357666,
+            0.0012063455368791307
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_03",
+          "center_m": [
+            -3.7521635736737933,
+            -4.496749210357666,
+            0.0012063455368791307
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_04",
+          "center_m": [
+            13.727535355854505,
+            -2.5290252434209064,
+            0.11013773639727696
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_05",
+          "center_m": [
+            11.27476180006818,
+            -2.7821686954033082,
+            0.10350251638489526
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_06",
+          "center_m": [
+            -13.727535355854505,
+            2.5290252457698577,
+            0.11013773604860447
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_07",
+          "center_m": [
+            -11.27476180006818,
+            2.7821686954033082,
+            0.10350251638489526
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_08",
+          "center_m": [
+            7.696561350611043,
+            3.4346917521190172,
+            0.08489299398557894
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_09",
+          "center_m": [
+            7.2623556155784454,
+            3.509977839974796,
+            0.10002094713204047
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_10",
+          "center_m": [
+            -7.696561350611043,
+            -3.4346917521190172,
+            0.08489299398557894
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_11",
+          "center_m": [
+            -7.2623556155784454,
+            -3.509977839974796,
+            0.10002094713204047
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_12",
+          "center_m": [
+            13.890611495649765,
+            3.4042234239698965,
+            0.09101109477378946
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_13",
+          "center_m": [
+            -13.893145044310755,
+            -3.4078748707009963,
+            0.09145699069686547
+          ],
+          "source": "visual_001.msh"
+        },
+        {
+          "name": "rmuc2027_side_closure_14",
+          "center_m": [
+            11.1484956741333,
+            -2.784124195575714,
+            0.10615683626383543
+          ],
+          "source": "visual_004.msh side aperture"
+        },
+        {
+          "name": "rmuc2027_side_closure_15",
+          "center_m": [
+            -11.1484956741333,
+            2.784124195575714,
+            0.10615683626383543
+          ],
+          "source": "visual_004.msh side aperture"
+        },
+        {
+          "name": "rmuc2027_side_closure_16",
+          "center_m": [
+            7.824100971221924,
+            3.4371291995048523,
+            0.0890573039650917
+          ],
+          "source": "visual_004.msh side aperture"
+        },
+        {
+          "name": "rmuc2027_side_closure_17",
+          "center_m": [
+            -7.824100971221924,
+            -3.4371291995048523,
+            0.0890573039650917
+          ],
+          "source": "visual_004.msh side aperture"
+        }
+      ]
+    },
+    "ripple_regions": [
+      {
+        "name": "rmuc2027_ripple_positive",
+        "bounds": [
+          6.3,
+          8.75,
+          5.56,
+          7.49
+        ],
+        "height_range": [
+          0.0029359959411687786,
+          0.12341534529086817
+        ],
+        "rows": 40,
+        "cols": 491
+      },
+      {
+        "name": "rmuc2027_ripple_negative",
+        "bounds": [
+          -8.75,
+          -6.3,
+          -7.49,
+          -5.56
+        ],
+        "height_range": [
+          0.002935998068127166,
+          0.12341536493827965
+        ],
+        "rows": 40,
+        "cols": 491
+      }
+    ],
+    "removed_collision_geoms": 2912,
+    "removed_unused_collision_mesh_assets": 1441,
+    "render_check": "EGL: visual, collision-only and overlay inspected; highland, platform, central and reverse views checked. Preview artifacts remain outside runtime asset repository.",
+    "output_hashes": {
+      "model.xml": "a20f1c5ac27897dc039e08f01ca6048bacf8e1cdf961c235e6b18f5e69d1f962",
+      "collision_assets.xml": "182fe16daf9693a557509a32615628a7157166e90e10044fd0d2342c1ae7d3b5",
+      "collision_geoms.xml": "e249beb7b228857c0f7d896767879f4a9a3033657e064764dce1612e15b704d1",
+      "closure_assets.xml": "57fe7e7ac5c1b1bcbe3eee7cce38c0bf6b1f4af7604f5a8249ce8a9e3c1f105b",
+      "closure_geoms.xml": "3780cf5b58769e8c76c1dc06366fb93c85508301eee17a10edf8cb6cddd47579",
+      "assets/rmuc2027_ripple_positive.bin": "160d0336aa40da6d83a129191dfeb8867015f646e20682f4f6bebe492357b028",
+      "assets/rmuc2027_ripple_negative.bin": "e819b85521306c1c27202fe9b8418f3bf7688c73467db9dff9b7a68c85fdcf31"
+    }
+  },
+  "side_closure_collision_baseline": {
+    "method": "Retained partitioned surface shells, exact convex side closures, and sampled ripple height fields",
+    "collision_geoms": 38595,
+    "mesh_geoms": 35648,
+    "box_geoms": 2945,
+    "hfield_geoms": 2,
+    "contact_priority": 1,
+    "contact_solref": [
+      0.004,
+      1
+    ],
+    "outputs": {
+      "model.xml": "a20f1c5ac27897dc039e08f01ca6048bacf8e1cdf961c235e6b18f5e69d1f962",
+      "collision_assets.xml": "182fe16daf9693a557509a32615628a7157166e90e10044fd0d2342c1ae7d3b5",
+      "collision_geoms.xml": "e249beb7b228857c0f7d896767879f4a9a3033657e064764dce1612e15b704d1",
+      "closure_assets.xml": "57fe7e7ac5c1b1bcbe3eee7cce38c0bf6b1f4af7604f5a8249ce8a9e3c1f105b",
+      "closure_geoms.xml": "3780cf5b58769e8c76c1dc06366fb93c85508301eee17a10edf8cb6cddd47579",
+      "assets/rmuc2027_ripple_positive.bin": "160d0336aa40da6d83a129191dfeb8867015f646e20682f4f6bebe492357b028",
+      "assets/rmuc2027_ripple_negative.bin": "e819b85521306c1c27202fe9b8418f3bf7688c73467db9dff9b7a68c85fdcf31"
+    },
+    "validation": {
+      "mujoco_version": "3.15.0",
+      "standalone_compile_s": 3.490863266008091,
+      "ngeom_before": 41520,
+      "ngeom_after": 38846,
+      "ripple_before": {
+        "samples": 2000,
+        "p95_m": 0.0033607437907617545,
+        "max_m": 0.2684272529910732,
+        "over_6mm": 79,
+        "over_2cm": 79
+      },
+      "ripple_after": {
+        "samples": 2000,
+        "p95_m": 0.0032976129039316237,
+        "max_m": 0.0034383213887634323,
+        "over_6mm": 0,
+        "over_2cm": 0
+      },
+      "global_top_before": {
+        "samples": 10500,
+        "p95_m": 0.002686962521481928,
+        "max_m": 2.566000010586221,
+        "over_6mm": 181,
+        "over_2cm": 73
+      },
+      "global_top_after": {
+        "samples": 10500,
+        "p95_m": 0.0026869578955205143,
+        "max_m": 2.566000010586221,
+        "over_6mm": 175,
+        "over_2cm": 67
+      },
+      "exact_visual_collision_pairs": 118,
+      "tunnel_rays": 54,
+      "tunnel_visual_max_change_m": 0.0,
+      "tunnel_collision_max_change_m": 0.0,
+      "dynamics_before": {
+        "step_median_ms": 1.0444684958201833,
+        "step_p95_ms": 1.0790652508148924,
+        "rtf": 1.9153756001489208,
+        "contacts_median": 15.0,
+        "contacts_p95": 16.0,
+        "contacts_max": 17
+      },
+      "dynamics_after": {
+        "step_median_ms": 0.9997715023928322,
+        "step_p95_ms": 1.058366293727886,
+        "rtf": 1.989664599506224,
+        "contacts_median": 10.0,
+        "contacts_p95": 12.0,
+        "contacts_max": 15
+      },
+      "collision_types_after": {
+        "mjtGeom.mjGEOM_HFIELD": 2,
+        "mjtGeom.mjGEOM_BOX": 2945,
+        "mjtGeom.mjGEOM_MESH": 35648
+      },
+      "moving_support_probes": {
+        "before": [
+          {
+            "start": [
+              6.5,
+              6.2,
+              0.2
+            ],
+            "min_clearance_m": -0.26737026809093156,
+            "sunk_samples": 649
+          },
+          {
+            "start": [
+              6.5,
+              6.6,
+              0.2
+            ],
+            "min_clearance_m": -0.2500134272625933,
+            "sunk_samples": 649
+          },
+          {
+            "start": [
+              -6.5,
+              -6.2,
+              0.2
+            ],
+            "min_clearance_m": 0.0020585534638290284,
+            "sunk_samples": 0
+          },
+          {
+            "start": [
+              -6.5,
+              -6.6,
+              0.2
+            ],
+            "min_clearance_m": -0.2704962349215276,
+            "sunk_samples": 649
+          }
+        ],
+        "after": [
+          {
+            "start": [
+              6.5,
+              6.2,
+              0.2
+            ],
+            "min_clearance_m": 0.002017722985486893,
+            "sunk_samples": 0
+          },
+          {
+            "start": [
+              6.5,
+              6.6,
+              0.2
+            ],
+            "min_clearance_m": 0.0021448438725792177,
+            "sunk_samples": 0
+          },
+          {
+            "start": [
+              -6.5,
+              -6.2,
+              0.2
+            ],
+            "min_clearance_m": 0.0015099354534197779,
+            "sunk_samples": 0
+          },
+          {
+            "start": [
+              -6.5,
+              -6.6,
+              0.2
+            ],
+            "min_clearance_m": 0.0021094131496464594,
+            "sunk_samples": 0
+          }
+        ],
+        "additional_tunnel_rays": 224,
+        "additional_tunnel_max_change_m": 0,
+        "additional_tunnel_ray_cutoff_m": 3,
+        "distal_ray_note": "Unbounded rays also reach the modified ripple road; those remote hits are excluded from the 3 m tunnel segment."
+      },
+      "individual_seal_contacts": {
+        "tested": 118,
+        "passed": 118,
+        "sphere_radius_m": 0.015,
+        "penetration_m": 0.001
+      }
+    },
+    "limits": "Sampled terrain validation only. Global top grid retains 67/10500 first-hit differences >20 mm and a 2.566 m maximum around silhouettes/central mechanisms. No full-field exactness, robot/controller/flight or high-speed impact claim. Historical generator alone does not regenerate the user-requested repair."
+  },
+  "surface_alignment_repair": {
+    "date": "2026-10-23",
+    "source": "Unmodified visual_update.mesh_files; source-face indices in surface_repair_sources.json",
+    "patch_count": 18303,
+    "source_triangles": 51109,
+    "source_mesh_count": 69,
+    "source_area_m2": 3.370182915745446,
+    "inward_extrusion_m": 0.002,
+    "merging": {
+      "edge_connected": true,
+      "maximum_seed_normal_angle_degrees": 30,
+      "maximum_seed_plane_displacement_m": 0.0015,
+      "convex_projected_footprint_area_relative_tolerance": 0.0001,
+      "convex_projected_footprint_area_absolute_tolerance_m2": 1e-09,
+      "note": "Merge only convex projected footprints; no broad bounding-box filling. Hull samples separately verified against referenced source triangles."
+    },
+    "roles": "All added patches collision-only, group 3, contype=conaffinity=1; original visual geometry unchanged. Previously approved 118 side closures retained.",
+    "static_fusion": "compiler fusestatic=true eliminates static body bookkeeping; all geom and site names/world transforms preserved. Static body IDs/names are not retained in the compiled model.",
+    "benchmark_baseline": "Previous approved closure/ripple version: no surface repair includes, fusestatic=false; same probes, timestep, solver and MuJoCo version. Additional fused-baseline timing available below.",
+    "fused_baseline_comparison": {
+      "before": {
+        "median_step_ms": 0.46086400107014924,
+        "p95_step_ms": 0.4824425508559216,
+        "rtf": 4.3014806253848965,
+        "median_contacts": 10.0,
+        "p95_contacts": 11.0,
+        "max_contacts": 12
+      },
+      "after": {
+        "median_step_ms": 0.6370960036292672,
+        "p95_step_ms": 0.6658066988165955,
+        "rtf": 3.131988922316578,
+        "median_contacts": 10.0,
+        "p95_contacts": 10.0,
+        "max_contacts": 12
+      }
+    }
+  }
+}

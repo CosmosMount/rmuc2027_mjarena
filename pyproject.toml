@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arena-sim-mujoco"
+version = "0.1.0"
+description = "Composable MuJoCo arenas and browser visualization"
+requires-python = ">=3.10"
+dependencies = ["mujoco>=3.15", "numpy"]
+
+[project.optional-dependencies]
+viewer = ["mjviser>=0.0.14,<0.1", "viser>=1.1,<1.2", "websockets>=15,<17"]
+
+[project.scripts]
+arena-sim = "arena_sim.__main__:main"
+
+[tool.setuptools]
+packages = ["arena_sim"]
+package-dir = {arena_sim = "."}
+
+[tool.setuptools.package-data]
+arena_sim = ["web/*.html", "web/*.js", "rmuc2027_battlefield_mjcf/*.xml", "rmuc2027_battlefield_mjcf/*.json", "rmuc2027_battlefield_mjcf/*.md", "rmuc2027_battlefield_mjcf/assets/*"]
